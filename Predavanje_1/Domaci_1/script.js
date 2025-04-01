@@ -1,2 +1,2 @@
-let niz = ["Racunar", "Tastatura", "Mis"];
-console.log(niz);
+let equipment = ["Racunar", "Tastatura", "Mis"];
+console.log(equipment);
