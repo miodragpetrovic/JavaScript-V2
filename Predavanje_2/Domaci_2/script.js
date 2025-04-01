@@ -5,7 +5,6 @@ let shop = {
 	closingHours: "18:00",
 };
 
-console.log(shop); // Ispisivanje celog objekta
 console.log(
 	shop.shopName,
 	shop.products[0],
