@@ -50,6 +50,7 @@ if (allowedTypes.includes(userType)) {
 
 let ifCheck = allowedTypes.includes(userType);
 if (ifCheck == true) {
+	// Moze i bez true samo ifCheck roverice dali je true ili false sam
 	console.log("2. Vi ste administrator!");
 } else {
 	console.log("2. Vi ste obican clan!");
