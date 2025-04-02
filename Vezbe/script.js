@@ -1,5 +1,5 @@
-// Napraviti tri paketa (Promenljive) Standrad, Premium, Business ca razlicitim cenama
-// Napraviti isto possebnu promenljivu za valutu
+// Napraviti tri paketa (Promenljive) Standrad, Premium, Business sa razlicitim cenama
+// Napraviti promenljivu za valutu
 // Izvrsiti proveru
 // Ako izaberemo neki od paketa treba da prikaze njegovu cenu i valutu.
 
