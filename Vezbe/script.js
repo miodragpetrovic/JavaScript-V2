@@ -21,3 +21,11 @@ if (standard === 700 && currency === "RS") {
 		"Izabrali ste paket Business. Cena je " + business + " " + currency
 	);
 }
+
+/* Kreiraj promenljivu temperatura koja sadrži trenutnu temperaturu u stepenima Celzijusa, a zatim napiši 
+if-else strukturu koja ispisuje "Hladno je" ako je temperatura manja od 15, 
+"Umereno je" ako je između 15 i 25, i 
+"Vruće je" ako je veća od 25. */
+
+let temperatura = "40";
+if (temperatura < 1)
