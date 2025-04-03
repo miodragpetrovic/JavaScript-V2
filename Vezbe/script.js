@@ -82,3 +82,11 @@ if (age < 12) {
 } else if (age > 18) {
 	console.log("Adult");
 }
+
+/* Kreiraj promenljivu dayOfWeek koja sadrži naziv dana u nedelji, a zatim napiši switch strukturu koja ispisuje 
+"It's a weekend!" za subotu i nedelju, a "It's a weekday." za ostale dane. */
+
+let dayOfWeek = "Monday";
+
+/* Kreiraj promenljivu score koja sadrži broj poena, a zatim napiši if-else strukturu koja ispisuje "Fail" ako je 
+broj poena manji od 50, "Pass" ako je između 50 i 75, i "Excellent" ako je veći od 75. */
