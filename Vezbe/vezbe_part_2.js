@@ -14,3 +14,7 @@ console.log(components);
 
 /* Napraviti array "books" koji sadrzi 3 knjige, pronaci nacin kako da naknadno dodati 
 novu knjigu na prvo mesto */
+
+let books = ["Learn JavaScript", "Learn HTML & CSS", "Learn React"];
+books.shift();
+console.log(books);
