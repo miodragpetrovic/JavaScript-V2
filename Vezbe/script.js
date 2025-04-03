@@ -116,3 +116,27 @@ if (score < 51) {
 } else if (score > 75) {
 	console.log("Excellent");
 }
+
+/* Kreiraj promenljivu setCurrency i dodaj vrednost npr. CHF.
+Napisi switch strukturu sa drugim valutama CHF, USD, EUR, CAD.
+Ako u promnljivu staviomo USD trba da ispise "USA currancy is USD"*
+i tako da ispisise za svaku valutu drugacije*/
+
+let setCurrency = "USD";
+
+switch (setCurrency) {
+	case "CHF":
+		console.log("The currency in Switzerland is CHF");
+		break;
+	case "USD":
+		console.log("The currency in America is USD");
+		break;
+	case "EUR":
+		console.log("The currency in Germany is EUR");
+		break;
+	case "CAD":
+		console.log("The currency in Canada is CAD");
+		break;
+	default:
+		console.log("Not set");
+}
