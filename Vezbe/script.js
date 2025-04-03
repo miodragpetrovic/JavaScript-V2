@@ -88,5 +88,20 @@ if (age < 12) {
 
 let dayOfWeek = "Monday";
 
+switch (dayOfWeek) {
+	case "Saturday":
+	case "Sunday":
+		console.log(" It's a weekend!");
+		break;
+	case "Monday":
+	case "Tuesday":
+	case "Wednesday":
+	case "Thursday":
+	case "Friday":
+		console.log("It'a a weekday.");
+		break;
+	default:
+		console.log("Not set");
+}
 /* Kreiraj promenljivu score koja sadrži broj poena, a zatim napiši if-else strukturu koja ispisuje "Fail" ako je 
 broj poena manji od 50, "Pass" ako je između 50 i 75, i "Excellent" ako je veći od 75. */
