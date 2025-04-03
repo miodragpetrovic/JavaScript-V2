@@ -54,3 +54,18 @@ if (dobarDan == "jutro") {
 } else {
 	console.log("Greska! Pokusajte ponovo");
 }
+
+/* Kreiraj promenljivu godineRada koja sadrži broj godina koliko osoba radi u nekoj firmi, a zatim napiši if-else strukturu 
+koja ispisuje "Početnik" ako je broj godina manji od 2, "Iskusan radnik" ako je između 2 i 5, i "Veteran" ako je veći od 5. */
+
+let godineRada = 6;
+
+if (godineRada < 2) {
+	console.log("Pocetnik");
+} else if (godineRada > 2 && godineRada < 5) {
+	console.log("Iskusan radnik");
+} else if (godineRada > 5) {
+	console.log("Veteran");
+} else {
+	console.log("Nema tacnih podataka!");
+}
