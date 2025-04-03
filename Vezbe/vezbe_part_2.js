@@ -1,6 +1,10 @@
 /* Napraviti prazan array koji se zove "names", pronaci nacin kako da 
 naknadno dodate 3 imena "marija", "petar" i "jovan" u taj array */
 
+let names = [];
+names.push("marija", "petar", "jovan");
+console.log(names);
+
 /* Napraviti array "komponente" i ubaciti 3 komponente, "monitor", "tastatura", "mis", 
 pronaci nacin kako da obrisete sve elemente in arraya */
 
