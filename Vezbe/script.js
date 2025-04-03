@@ -27,7 +27,7 @@ if-else strukturu koja ispisuje "Hladno je" ako je temperatura manja od 15,
 "Umereno je" ako je između 15 i 25, i 
 "Vruće je" ako je veća od 25. */
 
-let temperatura = "40";
+let temperatura = "26";
 
 if (temperatura < 15) {
 	console.log("Hladno je");
