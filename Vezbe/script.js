@@ -38,3 +38,19 @@ if (temperatura < 15) {
 } else {
 	console.log("Nemamo tacne podatke pokusajte kasnije");
 }
+
+/* Kreiraj promenljivu dobaDana koja može imati vrednosti "jutro", "popodne", ili "veče", a zatim napiši if-else 
+strukturu koja ispisuje odgovarajuću poruku kao što su "Dobro jutro", "Dobar dan", ili "Dobro veče" na osnovu 
+vrednosti te promenljive. */
+
+let dobarDan = "jutro";
+
+if (dobarDan == "jutro") {
+	console.log("Dobar " + dobarDan);
+} else if (dobarDan == "dan") {
+	console.log("Dobar " + dobarDan);
+} else if (dobarDan == "vece") {
+	console.log("Dobro " + dobarDan);
+} else {
+	console.log("Greska! Pokusajte ponovo");
+}
