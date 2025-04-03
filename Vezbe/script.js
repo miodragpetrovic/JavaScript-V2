@@ -69,3 +69,16 @@ if (godineRada < 2) {
 } else {
 	console.log("Nema tacnih podataka!");
 }
+
+/* Kreiraj promenljivu age koja sadrži broj godina, a zatim napiši if-else strukturu koja ispisuje "Child" ako je broj godina manji 
+od 12, "Teen" ako je između 12 i 18, i "Adult" ako je veći od 18. */
+
+let age = 11;
+
+if (age < 12) {
+	console.log("Child");
+} else if (age < 18) {
+	console.log("Teen");
+} else if (age > 18) {
+	console.log("Adult");
+}
