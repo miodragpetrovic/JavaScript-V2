@@ -103,5 +103,16 @@ switch (dayOfWeek) {
 	default:
 		console.log("Not set");
 }
+
 /* Kreiraj promenljivu score koja sadrži broj poena, a zatim napiši if-else strukturu koja ispisuje "Fail" ako je 
 broj poena manji od 50, "Pass" ako je između 50 i 75, i "Excellent" ako je veći od 75. */
+
+let score = 54;
+
+if (score < 51) {
+	console.log("Fail");
+} else if (score > 50 && score < 75) {
+	console.log("Pass");
+} else if (score > 75) {
+	console.log("Excellent");
+}
