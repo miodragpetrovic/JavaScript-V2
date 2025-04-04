@@ -1,26 +1,33 @@
-let name = "Admin";
-name = name.toLowerCase(); // kovertuje u mala slova
+// Vezba
+
+let name = "ADMIN";
+name = name.toLowerCase();
 
 if (name == "admin") {
 	console.log("Pozdrav admine!");
 } else {
-	console.log("Vi niste administrator");
+	console.log("Vi niste administrator.");
 }
 
-console.log(name[0]);
+// Vezba
+// Ako korisnikovo ime pocinje slovom "a" isposati ime
 
-if (name[0] == "a") {
-	console.log("Vase ime pocinje samoglasnikom");
+let fName = "Aleksandar";
+fName.startsWith("A");
+
+if (fName == "Aleksandar") {
+	console.log("Tacno, vasi ime pocinje samoglanikom A");
+} else {
+	console.log("Netacno, vase ime ne pocinje samoglasnikom A");
 }
 
-// Petlje - Loops
+// Vezba
 
-/* let cars = ["AUDI", "MERZEDES", "BMW", "OPEL", "RENAULT"];
-cars.push("FIAT", "MASERATI");
-let output = "";
+let vowels = ["A", "E", "I", "O", "U"];
+let myName = "Uros";
 
-for (i = 0; i < cars.length; i++) {
-	output += cars[i] + "<br>";
+if (myName.includes(vowels[4])) {
+	console.log("Tacno vasi ime pocinje samoglasnikom I");
+} else {
+	console.log("Netacno, vase ime ne pocinje samoglasnikom!");
 }
-
-document.querySelector(".demo").innerHTML = output; */
