@@ -39,3 +39,20 @@ if (number === 2) {
 } else {
 	console.log("Broj nije 2");
 }
+
+// Loops - Petlje
+
+let cars = ["BMW", "AUDI", " MERZEDES"];
+
+for (let i = 0; i < cars.length; i++) {
+	cars[i];
+}
+
+// For, forEach, while, do while, for in, for of
+
+//For petlja
+
+for (let i = 1; i < 101; i++) {
+	// i++ inkrementacija
+	console.log(i);
+}
