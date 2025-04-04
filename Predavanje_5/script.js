@@ -52,7 +52,13 @@ for (let i = 0; i < cars.length; i++) {
 
 //For petlja
 
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i < 11; i++) {
 	// i++ inkrementacija
-	console.log(i);
+	console.log("Ovo je oglas broj " + i);
+}
+
+let topCarModels = ["AUDI", "Merzedes", "BMW", "VW", "Maserati"];
+
+for (let i = 0; i < topCarModels.length; i++) {
+	console.log(topCarModels[i]);
 }
