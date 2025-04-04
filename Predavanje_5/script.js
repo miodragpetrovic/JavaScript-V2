@@ -31,3 +31,11 @@ if (myName.includes(vowels[4])) {
 } else {
 	console.log("Netacno, vase ime ne pocinje samoglasnikom!");
 }
+
+// ===
+let number = 2; // Bio je string
+if (number === 2) {
+	console.log("Broj je 2"); // === Proverava tip podatka i dali je vrednost ista
+} else {
+	console.log("Broj nije 2");
+}
