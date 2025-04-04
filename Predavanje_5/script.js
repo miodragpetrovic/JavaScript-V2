@@ -16,9 +16,11 @@ if (name[0] == "a") {
 // Petlje - Loops
 
 /* let cars = ["AUDI", "MERZEDES", "BMW", "OPEL", "RENAULT"];
-cars.push("FIAT");
+cars.push("FIAT", "MASERATI");
+let output = "";
 
 for (i = 0; i < cars.length; i++) {
-	console.log(cars[i]);
+	output += cars[i] + "<br>";
 }
- */
+
+document.querySelector(".demo").innerHTML = output; */
