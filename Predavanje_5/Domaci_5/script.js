@@ -25,7 +25,8 @@ let carMake = [
 ];
 
 for (let i = 0; i < carMake.length; i++) {
-	if (carMake.startsWith("A")) {
-		console.log(carMake[i]);
+	if (carMake[i][0].toLowerCase() === "a") {
+		continue;
 	}
+	console.log(carMake[i]);
 }
