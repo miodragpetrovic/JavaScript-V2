@@ -106,11 +106,24 @@ let students = [
 ];
 
 for (let i = 0; i < students.length; i++) {
-	console.log(students[i].name);
 	if (students[i].grade > 50) {
-		console.log("Pass");
+		console.log(
+			" Ime: " +
+				students[i].name +
+				" Grad: " +
+				students[i].city +
+				" Ispit: Polozio " +
+				students[i].grade
+		);
 	} else {
-		console.log("Fail");
+		console.log(
+			" Ime: " +
+				students[i].name +
+				" Grad: " +
+				students[i].city +
+				" Ispit: Nije polozio " +
+				students[i].grade
+		);
 	}
 }
 
