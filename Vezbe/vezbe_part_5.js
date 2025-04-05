@@ -179,6 +179,27 @@ for (let i = 0; i < fruits.length; i++) {
 /* Kreiraj objekat book sa svojstvima title, author, year, i genre, a zatim napiši for-in petlju koja prolazi kroz 
 sva svojstva objekta i koristi if-else strukturu da ispise poruku "Old book" ako je godina izdanja pre 2000, inače "New book". */
 
+let book = [
+	{
+		title: "To Kill a Mockingbird",
+		author: "Harper Lee",
+		year: "1960",
+		genre: "Fiction",
+	},
+	{
+		title: "Pride and Prejudice",
+		author: "Jane Austen",
+		year: "1813",
+		genre: "Romance",
+	},
+	{
+		title: "The Hobbit",
+		author: "J.R.R. Tolkien",
+		year: "1937",
+		genre: "Fantasy",
+	},
+];
+
 /* Kreiraj niz employees koji sadrži objekte sa svojstvima name i salary, a zatim napiši for petlju koja prolazi 
 kroz niz i koristi if-else strukturu da ispise "High salary" za plate iznad 50000, "Medium salary" za plate između 
 30000 i 50000, i "Low salary" za plate ispod 30000.
