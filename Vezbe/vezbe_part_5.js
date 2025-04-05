@@ -156,11 +156,20 @@ strukturu da ispise boju svakog voća (npr. "Apple is red", "Banana is yellow").
 let fruits = ["Apple", "Banana", "Orange", "Cherry", "Avocado"];
 
 for (let i = 0; i < fruits.length; i++) {
-	console.log(fruits[i]);
-
 	switch (fruits[i]) {
 		case "Apple":
-			console.log(" is red");
+			console.log("Apple is red");
+			break;
+		case "Banana":
+			console.log("Banana is yellow");
+			break;
+		case "Orange":
+			console.log("Orange is orange");
+			break;
+		case "Cherry":
+			console.log("Cherry is red");
+		case "Avocado":
+			console.log("Avocado is green");
 			break;
 		default:
 			console.log("Not defined!");
