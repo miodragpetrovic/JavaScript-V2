@@ -66,12 +66,15 @@ let topCars = {
 };
 
 for (let spec in topCars) {
-	let carsList = make[i];
+	let carsList = spec.topCars;
 	switch (carsList) {
 		case "red":
-			console.log("");
+			console.log("Kola su crvene boje!");
 		case "yellow":
-			console.log("");
+			console.log("Kola zute boje");
+			break;
+		default:
+			console.log("Boja nije definifsana!");
 	}
 }
 
