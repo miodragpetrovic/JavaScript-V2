@@ -130,6 +130,15 @@ for (let i = 0; i < students.length; i++) {
 /* Kreiraj niz grades koji sadrži ocene učenika, a zatim napiši petlju koja prolazi kroz niz i koristi if-else 
 strukturu da ispise "Excellent" za ocene iznad 90, "Good" za ocene između 75 i 90, "Average" za ocene između 50 i 75, i "Fail" za ocene ispod 50. */
 
+let grades = [
+	98, 91, 92, 85, 82, 77, 79, 80, 52, 56, 57, 59, 66, 69, 71, 74, 49, 33, 39,
+	41,
+];
+
+for (let i = 0; i < grades.length; i++) {
+	console.log(grades[i]);
+}
+
 /* Kreiraj niz fruits sa nekoliko različitih voća, a zatim napiši petlju koja prolazi kroz niz i koristi switch 
 strukturu da ispise boju svakog voća (npr. "Apple is red", "Banana is yellow").
  */
