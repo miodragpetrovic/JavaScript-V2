@@ -157,6 +157,14 @@ let fruits = ["Apple", "Banana", "Orange", "Cherry", "Avocado"];
 
 for (let i = 0; i < fruits.length; i++) {
 	console.log(fruits[i]);
+
+	switch (fruits[i]) {
+		case "Apple":
+			console.log(" is red");
+			break;
+		default:
+			console.log("Not defined!");
+	}
 }
 
 /* Kreiraj objekat book sa svojstvima title, author, year, i genre, a zatim napiši for-in petlju koja prolazi kroz 
