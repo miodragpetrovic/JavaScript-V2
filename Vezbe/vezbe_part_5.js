@@ -91,19 +91,22 @@ let students = [
 	{
 		name: "Miodrag",
 		city: "Cuprija",
+		grade: 83, 
 	},
 	{
 		name: "Dusan",
 		city: "Beograd",
+		grade: 49, 
 	},
 	{
 		name: "Dragan",
 		city: "Novi sad",
+		grade: 45, 
 	},
 ];
 
 for (let i = 0; i < students.length; i++) {
-	console.log(students[i].name);
+	if()
 }
 
 /* Kreiraj niz grades koji sadrži ocene učenika, a zatim napiši petlju koja prolazi kroz niz i koristi if-else 
