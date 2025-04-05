@@ -136,7 +136,18 @@ let grades = [
 ];
 
 for (let i = 0; i < grades.length; i++) {
-	console.log(grades[i]);
+	/* console.log(grades[i]); */
+	if (grades[i] > 90) {
+		console.log(grades[i] + " Excellent!!!");
+	} else if (grades[i] > 75 && grades[i] < 90) {
+		console.log(grades[i] + " Good!");
+	} else if (grades[i] > 50 && grades[i] < 75) {
+		console.log(grades[i] + " Average");
+	} else if (grades[i] < 50) {
+		console.log(grades[i] + " Fail!");
+	} else {
+		console.log("Nothing found");
+	}
 }
 
 /* Kreiraj niz fruits sa nekoliko različitih voća, a zatim napiši petlju koja prolazi kroz niz i koristi switch 
