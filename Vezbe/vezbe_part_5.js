@@ -62,22 +62,22 @@ let topCars = {
 	make: "Audi",
 	model: "M3",
 	year: "2022",
-	color: "red",
+	color: "crvena",
 };
 
 for (let spec in topCars) {
 	switch (spec) {
 		case "make":
-			console.log("Maka automobila je " + topCars[spec]);
+			console.log("Marka: " + topCars[spec]);
 			break;
 		case "model":
-			console.log("Model automobila je " + topCars[spec]);
+			console.log("Model: " + topCars[spec]);
 			break;
 		case "year":
-			console.log("Kola su " + topCars[spec] + " godiste");
+			console.log("Godiste: " + topCars[spec]);
 			break;
 		case "color":
-			console.log("Kola su " + topCars[spec] + " boje.");
+			console.log("Boja: " + topCars[spec]);
 			break;
 		default:
 			console.log("Boja nije definifsana!");
@@ -86,6 +86,25 @@ for (let spec in topCars) {
 
 /* Kreiraj niz students koji sadrži objekte sa svojstvima name i grade, a zatim napiši for petlju koja prolazi 
 kroz niz i koristi if-else strukturu da ispise "Pass" za ocene 50 i više, i "Fail" za ocene ispod 50. */
+
+let students = [
+	{
+		name: "Miodrag",
+		city: "Cuprija",
+	},
+	{
+		name: "Dusan",
+		city: "Beograd",
+	},
+	{
+		name: "Dragan",
+		city: "Novi sad",
+	},
+];
+
+for (let i = 0; i < students.length; i++) {
+	console.log(students[i].name);
+}
 
 /* Kreiraj niz grades koji sadrži ocene učenika, a zatim napiši petlju koja prolazi kroz niz i koristi if-else 
 strukturu da ispise "Excellent" za ocene iznad 90, "Good" za ocene između 75 i 90, "Average" za ocene između 50 i 75, i "Fail" za ocene ispod 50. */
