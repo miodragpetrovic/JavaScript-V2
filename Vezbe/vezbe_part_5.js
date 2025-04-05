@@ -153,6 +153,7 @@ for (let i = 0; i < grades.length; i++) {
 /* Kreiraj niz fruits sa nekoliko različitih voća, a zatim napiši petlju koja prolazi kroz niz i koristi switch 
 strukturu da ispise boju svakog voća (npr. "Apple is red", "Banana is yellow").
  */
+let fruits = [""];
 /* Kreiraj objekat book sa svojstvima title, author, year, i genre, a zatim napiši for-in petlju koja prolazi kroz 
 sva svojstva objekta i koristi if-else strukturu da ispise poruku "Old book" ako je godina izdanja pre 2000, inače "New book". */
 
