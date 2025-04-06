@@ -27,7 +27,10 @@ let korpa = [
 		amount: 1,
 	},
 ];
+console.log(korpa[0]["price"]); // Ispisivanje samo cene iz objekta
 
 for (let korpe in korpa) {
 	console.log(korpa[korpe].price);
 }
+
+// Vezba
