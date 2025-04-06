@@ -215,6 +215,17 @@ for (let books in book) {
 kroz niz i koristi if-else strukturu da ispise "High salary" za plate iznad 50000, "Medium salary" za plate između 
 30000 i 50000, i "Low salary" za plate ispod 30000.
  */
+
+let employees = [
+	{
+		name: "Petrovic",
+		salery: "4800.-",
+	},
+];
+
+for (let i = 0; i < employees; i++) {
+	console.log(employees[i].name);
+}
 /* Kreiraj niz cities sa nekoliko imena gradova, a zatim napiši petlju koja prolazi kroz niz i koristi switch strukturu 
 da ispise poruku specifičnu za svaki grad (npr. "Welcome to New York", "Welcome to Los Angeles").
  */
