@@ -254,6 +254,7 @@ da ispise poruku specifičnu za svaki grad (npr. "Welcome to New York", "Welcome
  */
 
 let cities = ["Cuprija", "Beograd", "Jagodina", "Paracin"];
+
 for (let i = 0; i < cities.length; i++) {
 	/* console.log(cities[i]);  Check*/
 	switch (cities[i]) {
