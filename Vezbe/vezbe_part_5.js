@@ -201,7 +201,7 @@ let book = [
 ];
 
 for (let books in book) {
-	/* console.log(book[books].title); */
+	/* console.log(book[books].title);  Check*/
 	if (book[books].year > 2000) {
 		console.log(book[books].title + " New book");
 	} else if (book[books].year < 2000) {
@@ -240,7 +240,7 @@ let employees = [
 ];
 
 for (let i = 0; i < employees.length; i++) {
-	/* console.log(employees[i].name); */
+	/* console.log(employees[i].name);  Check */
 	if (employees[i].salery > 5000) {
 		console.log(employees[i].name + " High salery!");
 	} else if (employees[i].salery < 5000 && employees[i].salery > 3000) {
@@ -252,3 +252,24 @@ for (let i = 0; i < employees.length; i++) {
 /* Kreiraj niz cities sa nekoliko imena gradova, a zatim napiši petlju koja prolazi kroz niz i koristi switch strukturu 
 da ispise poruku specifičnu za svaki grad (npr. "Welcome to New York", "Welcome to Los Angeles").
  */
+
+let cities = ["Cuprija", "Beograd", "Jagodina", "Paracin"];
+for (let i = 0; i < cities.length; i++) {
+	/* console.log(cities[i]);  Check*/
+	switch (cities[i]) {
+		case "Cuprija":
+			console.log("Welcome to " + cities[i]);
+			break;
+		case "Beograd":
+			console.log("Welcome to " + cities[i]);
+			break;
+		case "Jagodina":
+			console.log("Welcome to " + cities[i]);
+			break;
+		case "Paracin":
+			console.log("Welcome to " + cities[i]);
+			break;
+		default:
+			console.log("City not defined");
+	}
+}
