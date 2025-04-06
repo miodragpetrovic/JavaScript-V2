@@ -195,10 +195,21 @@ let book = [
 	{
 		title: "The Hobbit",
 		author: "J.R.R. Tolkien",
-		year: "1937",
+		year: "2007",
 		genre: "Fantasy",
 	},
 ];
+
+for (let books in book) {
+	/* console.log(book[books].title); */
+	if (book[books].year > 2000) {
+		console.log(book[books].title + " New book");
+	} else if (book[books].year < 2000) {
+		console.log(book[books].title + " Old book");
+	} else {
+		console.log("Year not defined!");
+	}
+}
 
 /* Kreiraj niz employees koji sadrži objekte sa svojstvima name i salary, a zatim napiši for petlju koja prolazi 
 kroz niz i koristi if-else strukturu da ispise "High salary" za plate iznad 50000, "Medium salary" za plate između 
