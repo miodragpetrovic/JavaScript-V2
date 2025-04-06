@@ -243,7 +243,7 @@ for (let i = 0; i < employees.length; i++) {
 	/* console.log(employees[i].name); */
 	if (employees[i].salery > 5000) {
 		console.log(employees[i].name + " High salery!");
-	} else if (employees[i].salery < 5000) {
+	} else if (employees[i].salery < 5000 && employees[i].salery > 3000) {
 		console.log(employees[i].name + " Medim salery!");
 	} else {
 		console.log(employees[i].name + " Low salery :(");
