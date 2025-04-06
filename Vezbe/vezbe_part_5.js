@@ -219,12 +219,35 @@ kroz niz i koristi if-else strukturu da ispise "High salary" za plate iznad 5000
 let employees = [
 	{
 		name: "Petrovic",
-		salery: "4800.-",
+		salery: 4800,
+	},
+	{
+		name: "Obradovic",
+		salery: 5900,
+	},
+	{
+		name: "Jovanovic",
+		salery: 3900,
+	},
+	{
+		name: "Sekulic",
+		salery: 7200,
+	},
+	{
+		name: "Zivkovic",
+		salery: 1900,
 	},
 ];
 
-for (let i = 0; i < employees; i++) {
-	console.log(employees[i].name);
+for (let i = 0; i < employees.length; i++) {
+	/* console.log(employees[i].name); */
+	if (employees[i].salery > 5000) {
+		console.log(employees[i].name + " High salery!");
+	} else if (employees[i].salery < 5000) {
+		console.log(employees[i].name + " Medim salery!");
+	} else {
+		console.log(employees[i].name + " Low salery :(");
+	}
 }
 /* Kreiraj niz cities sa nekoliko imena gradova, a zatim napiši petlju koja prolazi kroz niz i koristi switch strukturu 
 da ispise poruku specifičnu za svaki grad (npr. "Welcome to New York", "Welcome to Los Angeles").
