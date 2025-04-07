@@ -18,12 +18,12 @@ let korpa = [
 	},
 	{
 		name: "luk",
-		price: 100,
+		price: 10,
 		amount: 1,
 	},
 	{
 		name: "Mleko",
-		price: 100,
+		price: 10,
 		amount: 1,
 	},
 ];
@@ -37,6 +37,6 @@ let korpa = [
 // Ako je cena proizvoda veza od 200 dinara zaustaviti petlju
 for (let korpe in korpa) {
 	if (korpa[korpe]["price"] > 200) {
-		console.log("Proizvod kosta vise od 200");
 	}
+	console.log("Proizvod kosta vise od 200");
 }
