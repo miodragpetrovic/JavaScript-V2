@@ -23,14 +23,20 @@ let korpa = [
 	},
 	{
 		name: "Mleko",
-		price: 250,
+		price: 100,
 		amount: 1,
 	},
 ];
-console.log(korpa[0]["price"]); // Ispisivanje samo cene iz objekta
+/* console.log(korpa[0]["price"]); */ // Ispisivanje samo cene iz objekta
 
-for (let korpe in korpa) {
+/* for (let korpe in korpa) {
 	console.log(korpa[korpe].price);
-}
+} */
 
 // Vezba
+// Ako je cena proizvoda veza od 200 dinara zaustaviti petlju
+for (let korpe in korpa) {
+	if (korpa[korpe]["price"] > 200) {
+		console.log("Proizvod kosta vise od 200");
+	}
+}
