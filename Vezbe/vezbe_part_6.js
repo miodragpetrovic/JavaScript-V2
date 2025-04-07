@@ -2,10 +2,22 @@
 a zatim napiši if-else strukturu koja koristi alert da ispise "Excellent" za ocene iznad 90, 
 "Good" za ocene između 75 i 90, "Average" za ocene između 50 i 75, i "Fail" za ocene ispod 50. */
 
+let grade = prompt("Enter your grade");
+
+if (grade > 90) {
+	alert("Excellent");
+} else if (grade > 50 && grade < 75) {
+	alert("Average");
+} else if (grade < 50) {
+	alert("Fail");
+}
+
 /* Kreiraj niz shoppingList koji sadrži nekoliko artikala unetih od strane korisnika putem prompt 
 funkcije (koristi split(',') da bi razdvojio stvari u nizu), a zatim napiši for petlju koja prolazi 
 kroz niz i koristi switch strukturu da ispise specifične poruke za određene artikle (npr. "Buy fruits", "Buy vegetables") 
 koristeći alert za prikaz poruka. */
+
+let shoppingList = [""];
 
 /* Kreiraj promenljivu weather koja prima stanje vremena (npr. "sunny", "rainy", "cloudy") uneto od strane 
 korisnika putem prompt funkcije, a zatim napiši switch strukturu koja koristi alert da ispise poruku kao što je 
