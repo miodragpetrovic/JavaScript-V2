@@ -13,8 +13,8 @@ let ads = [
 	},
 ];
 
-let listingPage = document.querySelector("#listing");
+let listingPage = document.querySelector("#products");
 
 for (let i = 0; i < ads.length; i++) {
-	listingPage.innerHTML = ads[i].title;
+	listingPage.innerHTML = ads[i];
 }
