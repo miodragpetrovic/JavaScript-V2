@@ -13,8 +13,14 @@ let ads = [
 	},
 ];
 
-let listingPage = document.querySelector("#products");
+let productsElement = document.getElementById("products");
 
-for (let i = 0; i < ads.length; i++) {
-	listingPage.innerHTML = ads[i];
+for (let ad in ads) {
+	productsElement.innerHTML +=
+		"<br /> " +
+		ads[ad]["title"] +
+		"<br /> " +
+		ads[ad]["price"] +
+		"<br />" +
+		ads[ad]["image"];
 }
