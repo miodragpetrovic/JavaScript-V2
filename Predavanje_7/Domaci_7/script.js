@@ -1,3 +1,4 @@
+// Prvi nacin sa for In petljom
 let ads = [
 	{
 		title: "Skoda octavia 2014",
@@ -15,7 +16,7 @@ let ads = [
 
 let productsElement = document.getElementById("products");
 
-for (let ad in ads) {
+/* for (let ad in ads) {
 	productsElement.innerHTML +=
 		"<br /> " +
 		ads[ad]["title"] +
@@ -23,4 +24,11 @@ for (let ad in ads) {
 		ads[ad]["price"] +
 		"<br />" +
 		ads[ad]["image"];
+} */
+
+// Drugi nacin sa for petljom
+for (let i = 0; i < ads.length; i++) {
+	productsElement.innerHTML += ads[i]["title"] + "<br />";
+	productsElement.innerHTML += ads[i]["price"] + "<br />";
+	productsElement.innerHTML += ads[i]["image"] + "<br />";
 }
