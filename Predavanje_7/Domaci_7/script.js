@@ -32,3 +32,8 @@ for (let i = 0; i < ads.length; i++) {
 	productsElement.innerHTML += ads[i]["price"] + "<br />";
 	productsElement.innerHTML += ads[i]["image"] + "<br />";
 }
+
+// Treci nacin sa for of petljom
+/* for (ad of ads) {
+	productsElement.innerHTML += ad["title"] += ad["price"] += ad["image"];
+} */
