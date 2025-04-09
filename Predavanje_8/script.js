@@ -56,4 +56,5 @@ let cars = [
 	},
 ];
 
-for ()
+for (let car in cars) {
+}
