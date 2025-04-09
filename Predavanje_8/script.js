@@ -57,6 +57,7 @@ let cars = [
 ];
 
 let carMake = document.querySelector(".carMake");
+let carImg = document.querySelector(".carImg");
 
 for (let car in cars) {
 	console.log(cars[car].make);
