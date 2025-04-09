@@ -10,3 +10,11 @@ let products = document.querySelectorAll(".product");
 for (let product of products) {
 	product.style.color = "red";
 }
+
+let cars = [
+	{
+		make: "",
+		price: "",
+		iamge: "",
+	},
+];
