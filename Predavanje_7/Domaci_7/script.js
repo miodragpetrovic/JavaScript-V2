@@ -1,4 +1,3 @@
-// Prvi nacin sa for In petljom
 let ads = [
 	{
 		title: "Skoda octavia 2014",
@@ -16,6 +15,7 @@ let ads = [
 
 let productsElement = document.getElementById("products");
 
+// Prvi nacin sa for In petljom
 /* for (let ad in ads) {
 	productsElement.innerHTML +=
 		"<br /> " +
