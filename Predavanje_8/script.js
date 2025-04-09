@@ -62,4 +62,5 @@ let carImg = document.querySelector(".carImg");
 for (let car in cars) {
 	console.log(cars[car].make);
 	carMake.innerHTML += "<br>" + cars[car]["make"] + " " + cars[car]["price"];
+	carImg.innerHTML += "<img src='cars[car]["image"]'";
 }
