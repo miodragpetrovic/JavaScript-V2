@@ -56,6 +56,9 @@ let cars = [
 	},
 ];
 
+let carMake = document.querySelector(".carMake");
+
 for (let car in cars) {
 	console.log(cars[car].make);
+	carMake.innerHTML += cars[car]["make"];
 }
