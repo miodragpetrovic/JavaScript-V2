@@ -55,3 +55,5 @@ let cars = [
 			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2018_Kia_Ceed_1.4.jpg/800px-2018_Kia_Ceed_1.4.jpg",
 	},
 ];
+
+for ()
