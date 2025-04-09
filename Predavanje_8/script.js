@@ -57,4 +57,5 @@ let cars = [
 ];
 
 for (let car in cars) {
+	console.log(cars[car].make);
 }
