@@ -56,7 +56,7 @@ let cars = [
 	},
 ];
 
-/* for (let car of cars) {
+for (let car of cars) {
 	console.log(car.make);
 
 	let myDiv = document.createElement("div");
@@ -66,14 +66,15 @@ let cars = [
 	<img src="${car.image}" alt="${car.make}" width="200">`;
 
 	document.body.appendChild(myDiv);
-} */
+}
 
-for (let car of cars) {
+// Samo testiranje
+/* for (let car of cars) {
 	console.log(car.make);
 
 	let myDiv = document.createElement("div");
 
-	myDiv.setAttribute("<h2></h2>");
+	myDiv.setAttribute(`<h2>${car.make}</h2>`);
 
 	document.body.appendChild(myDiv);
-}
+} */
