@@ -16,7 +16,7 @@ let cars = [
 		make: "BMW",
 		price: "25,000€",
 		image:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/2019_BMW_330i_M_Sport_Automatic_2.0.jpg/800px-2019_BMW_330i_M_Sport_Automatic_2.0.jpg",
+			"https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/responsibility/the-new-bmw-i5-edrive_720x720.jpeg",
 	},
 	{
 		make: "Audi",
@@ -56,9 +56,14 @@ let cars = [
 	},
 ];
 
-let carMake = document.querySelector(".carMake");
-
 for (let car of cars) {
-	console.log(cars.make);
-	carMake.innerHTML += "<br>" + car[cars].make + " " + car[cars].price;
+	console.log(car.make);
+
+	let myDiv = document.createElement("div");
+
+	myDiv.innerHTML = `<h3>${car.make}</h3>
+	<p>Price: ${car.price}</p>
+	<img src="${car.image}" alt="${car.make}" width="200">`;
+
+	document.body.appendChild(myDiv);
 }
