@@ -12,7 +12,7 @@ imgElement.setAttribute(
 	"src", // Dodavanje atributa src i adrese do slike
 	"https://storage.googleapis.com/pod_public/1300/173321.jpg"
 );
-imgElement.setAttribute("width", "340"); // Dodavanje atributa width
+imgElement.setAttribute("width", "200"); // Dodavanje atributa width
 imgElement.setAttribute("alt", "Car image"); // Dodavanje atributa alt
 
 document.body.appendChild(imgElement);
