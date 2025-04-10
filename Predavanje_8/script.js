@@ -73,9 +73,7 @@ for (let car of cars) {
 
 	let myDiv = document.createElement("div");
 
-	myDiv.innerHTML = `<h3>${car.make}</h3>
-	<p>Price: ${car.price}</p>
-	<img src="${car.image}" alt="${car.make}" width="200">`;
+	myDiv.setAttribute("<h2></h2>");
 
 	document.body.appendChild(myDiv);
 }
