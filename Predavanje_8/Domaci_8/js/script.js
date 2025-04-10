@@ -63,7 +63,7 @@ let cars = [
 	},
 ];
 
-let carListing = document.getElementById("carListing");
+const carListing = document.getElementById("carListing");
 
 for (let car of cars) {
 	/* console.log(car.make, car.price, car.year, car.image);  */ // Sljaka
@@ -87,5 +87,5 @@ for (let car of cars) {
 
 	carElement.append(carImage, carTitle, carPrice, carYear);
 
-	document.body.appendChild(carElement);
+	carListing.appendChild(carElement);
 }
