@@ -74,7 +74,7 @@ for (let car of cars) {
 	let carTitle = document.createElement("h2");
 	carTitle.textContent = car.make;
 
-	let carPrice = document.createElement("p");
+	let carPrice = document.createElement("h4");
 	carPrice.textContent = car.price;
 
 	let carYear = document.createElement("p");
@@ -83,7 +83,7 @@ for (let car of cars) {
 	let carImage = document.createElement("img");
 	carImage.src = car.image;
 	carImage.alt = car.make;
-	carImage.style.width = "200px";
+	carImage.style.width = "290px";
 
 	carElement.append(carImage, carTitle, carPrice, carYear);
 

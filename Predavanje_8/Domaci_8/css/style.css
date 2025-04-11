@@ -9,6 +9,11 @@ body {
 	height: 100vh;
 }
 
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
 #carListing {
 	display: flex;
 	flex-wrap: wrap;
@@ -18,12 +23,27 @@ body {
 .carCard {
 	display: flex;
 	flex-direction: column;
+	margin: 5px;
 	width: 290px;
 	background-color: #c8ecff;
+}
+
+.carCard h2,
+h4,
+p {
+	padding: 5px;
 }
 
 .carCard img {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+	#carListing {
+		display: flex;
+		width: 375px;
+		justify-content: center;
+	}
 }
