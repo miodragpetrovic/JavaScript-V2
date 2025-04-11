@@ -85,7 +85,17 @@ for (let car of cars) {
 	carImage.alt = car.make;
 	carImage.style.width = "290px";
 
-	carElement.append(carImage, carTitle, carPrice, carYear);
+	let carNewLabel = document.createElement("div");
+	carNewLabel.classList.add("carNewLabel");
+
+	carNewLabel.textContent = "NOVO";
+	carNewLabel.style.display = "none";
+
+	if (car.year === 2025) {
+		carNewLabel.style.display = "flex";
+	}
+
+	carElement.append(carImage, carNewLabel, carTitle, carPrice, carYear);
 
 	carListing.appendChild(carElement);
 }

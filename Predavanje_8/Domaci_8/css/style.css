@@ -32,6 +32,11 @@ body {
 	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.2));
 }
 
+.carCard .carNewLabel {
+	background-color: aquamarine;
+	position: absolute;
+}
+
 .carCard h2,
 h4,
 p {
