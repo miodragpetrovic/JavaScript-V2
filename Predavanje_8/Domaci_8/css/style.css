@@ -33,8 +33,12 @@ body {
 }
 
 .carCard .carNewLabel {
-	background-color: aquamarine;
+	background-color: #32d949;
 	position: absolute;
+	padding: 3px 10px;
+	margin: 10px;
+	color: #242424;
+	border-radius: 20px;
 }
 
 .carCard h2,
