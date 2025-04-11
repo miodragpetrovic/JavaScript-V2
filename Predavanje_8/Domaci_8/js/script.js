@@ -29,8 +29,8 @@ let cars = [
 	},
 	{
 		make: "Toyota",
-		price: "18,000€",
-		year: 2021,
+		price: "35,000€",
+		year: 2025,
 		image:
 			"https://scene7.toyota.eu/is/image/toyotaeurope/Toyota_Yaris_GR_Front-3_4-3:Medium-Landscape?ts=1705061708918&resMode=sharp2&op_usm=1.75,0.3,2,0",
 	},
@@ -56,8 +56,8 @@ let cars = [
 	},
 	{
 		make: "Opel",
-		price: "15,000€",
-		year: 2017,
+		price: "36,000€",
+		year: 2025,
 		image:
 			"https://visual3d-secure.opel-vauxhall.com/V3DImage.ashx?client=CFGAP3D&mkt=CH&env=PROD&version=1GQOSYKP9KB0A050&ratio=1&format=jpg&quality=90&width=640&view=001&color=0MP00NWP&trim=0PEG0RFR&opt1=JD02&opt2=ZHRS&back=0https://visual3d-secure.opel-vauxhall.com/V3DImage.ashx?client=CFGAP3D&mkt=CH&env=PROD&version=1GQOSYKP9KB0A050&ratio=1&format=jpg&quality=90&width=640&view=001&color=0MP00NWP&trim=0PEG0RFR&opt1=JD02&opt2=ZHRS&back=0",
 	},
