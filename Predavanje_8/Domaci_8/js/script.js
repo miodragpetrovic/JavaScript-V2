@@ -16,7 +16,7 @@ let cars = [
 	{
 		make: "Mercedes",
 		price: "30,000€",
-		year: 2018,
+		year: 2025,
 		image:
 			"https://www.mercedes-benz.ch/content/dam/hq/passengercars/cars/cle/cle-coupe-c236-pi/overview/stage/06-2023/images/mercedes-benz-cle-coupe-c236-stage-3840x3840-06-2023.jpg/1740018524347.jpg?im=Crop,rect=(1314,795,2415,2415);Resize=(828)",
 	},
