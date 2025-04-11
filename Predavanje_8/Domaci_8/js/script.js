@@ -88,7 +88,7 @@ for (let car of cars) {
 	let carNewLabel = document.createElement("div");
 	carNewLabel.classList.add("carNewLabel");
 
-	carNewLabel.textContent = "NOVO";
+	carNewLabel.textContent = "NEW";
 	carNewLabel.style.display = "none";
 
 	if (car.year === 2025) {
