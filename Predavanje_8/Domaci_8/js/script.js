@@ -43,8 +43,8 @@ let cars = [
 	},
 	{
 		make: "Kia",
-		price: "17,000€",
-		year: 2018,
+		price: "33,000€",
+		year: 2025,
 		image:
 			"https://www.autosprint.ch/wp-content/uploads/2023/07/Kia-Picanto_autosprint.ch_-scaled.jpg",
 	},
