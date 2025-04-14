@@ -48,13 +48,21 @@ for (let room in roomNumber) {
 	roomQuantity.appendChild(roomOption);
 }
 
+let showText = null;
+// Drugi nacin
+myCity.addEventListener("change", function (e) {
+	console.log(e.currentTarget.value);
+
+	showText = e.currentTarget.value;
+});
+
 document
 	.querySelector("#searcProperties")
 	.addEventListener("click", function () {
-		console.log("TEST");
+		console.log("Moj grad je" + " " + showText); // Ispisi samo TEST u consoli
 	});
 
 // Ako kliknemo na neko polje da prikaze to polje iz niza
-myCity.addEventListener("change", function () {
+/* myCity.addEventListener("change", function () {
 	console.log("Izabrali ste grad", this.value);
-});
+}); */
