@@ -28,8 +28,6 @@ let objectTypeOption = document.querySelector("#object");
 let roomQuantity = document.querySelector("#roomQuantity");
 
 for (let city in cities) {
-	console.log(cities[city]);
-
 	let cityOption = document.createElement("option");
 	cityOption.textContent = cities[city];
 
@@ -37,8 +35,6 @@ for (let city in cities) {
 }
 
 for (let type in objectType) {
-	console.log(objectType[type]);
-
 	let typeOption = document.createElement("option");
 	typeOption.textContent = objectType[type];
 
@@ -46,10 +42,14 @@ for (let type in objectType) {
 }
 
 for (let room in roomNumber) {
-	console.log(roomNumber[room]);
-
 	let roomOption = document.createElement("option");
 	roomOption.textContent = roomNumber[room];
 
 	roomQuantity.appendChild(roomOption);
 }
+
+document
+	.querySelector("#searcProperties")
+	.addEventListener("click", function () {
+		console.log("TEST");
+	});
