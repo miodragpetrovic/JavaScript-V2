@@ -4,12 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<form action="">
-			<select name="city" id="city"></select>
-			<button type="button">Next</button>
-		</form>
+		<div class="container">
+			<form action="">
+				<select name="city" id="city">
+					<option value="" disabled selected>Izaberite lokaciju</option>
+				</select>
+
+				<select name="object" id="object">
+					<option value="" disabled selected>Tip objekta</option>
+				</select>
+
+				<button type="button">Next</button>
+			</form>
+		</div>
 
 		<script src="script.js"></script>
 	</body>
