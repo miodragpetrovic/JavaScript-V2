@@ -53,3 +53,8 @@ document
 	.addEventListener("click", function () {
 		console.log("TEST");
 	});
+
+// Ako kliknemo na neko polje da prikaze to polje iz niza
+myCity.addEventListener("change", function () {
+	console.log("Izabrali ste grad", this.value);
+});

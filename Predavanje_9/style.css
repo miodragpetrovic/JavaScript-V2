@@ -9,7 +9,7 @@
 }
 
 form {
-	display: flex;
+	display: grid;
 	justify-content: center;
 	margin: auto;
 	gap: 10px;
