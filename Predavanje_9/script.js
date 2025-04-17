@@ -23,6 +23,12 @@ let roomNumber = [
 	"4.5 i vise soba",
 ];
 
+let realEstates = [
+	{
+		city,
+	},
+];
+
 let myCity = document.querySelector("#city");
 let objectTypeOption = document.querySelector("#object");
 let roomQuantity = document.querySelector("#roomQuantity");
@@ -48,13 +54,13 @@ for (let room in roomNumber) {
 	roomQuantity.appendChild(roomOption);
 }
 
-let showText = null;
-// Drugi nacin
+/* let showText = null;
+// Drugi nacin kada se promeni nesto u dropdown-u
 myCity.addEventListener("change", function (e) {
 	console.log(e.currentTarget.value);
 
 	showText = e.currentTarget.value;
-});
+}); */
 
 document
 	.querySelector("#searcProperties")
