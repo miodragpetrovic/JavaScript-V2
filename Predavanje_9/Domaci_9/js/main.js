@@ -75,3 +75,7 @@ const realEstatesListing = [
 		images: ["/images/estate6.jpg"],
 	},
 ];
+
+// Search Box
+
+// Real Estate Listing
