@@ -93,6 +93,8 @@ for ( let objectTyp of objectType){
 	typeObject.appendChild(optionType);
 }
 
+let sizeOf = document.createElement('#sizeOf');
+
 
 
 
