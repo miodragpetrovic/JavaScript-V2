@@ -95,6 +95,8 @@ for ( let objectTyp of objectType){
 
 let sizeOf = document.createElement('#sizeOf');
 
+for( let rooms of roomNumber){}
+
 
 
 
