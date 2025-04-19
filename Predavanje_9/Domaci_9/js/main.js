@@ -98,7 +98,7 @@ let sizeOf = document.querySelector('#sizeOf');
 for( let rooms of roomNumber){
 	let roomOption = createElement('option');
 	roomOption.textContent = rooms;
-	sizeOf.
+	sizeOf.appendChild(roomOption);
 
 }
 
