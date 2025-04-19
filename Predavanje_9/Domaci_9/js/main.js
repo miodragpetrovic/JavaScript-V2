@@ -81,13 +81,12 @@ const realEstatesListing = [
 // City
 let searchBtn = document.querySelector("#searchBtn");
 
-searchBtn.addEventListener("click", function () {
-	let citySelect = document.querySelector("#city");
 
-	for (let cityOf of cities) {
-		console.log(cityOf['city']);
-	}
-});
+for (let cityOf of realEstatesListing) {
+	console.log(cityOf['objectType']);
+}
+
+
 // Typ
 
 // Room numbers
