@@ -84,8 +84,8 @@ let searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", function () {
 	let citySelect = document.querySelector("#city");
 
-	for (city of cities) {
-		console.log(cities);
+	for (let cityOf of cities) {
+		console.log(cityOf['city']);
 	}
 });
 // Typ
