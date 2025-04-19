@@ -77,14 +77,36 @@ const realEstatesListing = [
 ];
 
 // Search Box
+let myCity = document.querySelector('#city');
+
+for (let city of cities){
+	let option = document.createElement('option'); // Napravili smo option element
+	option.textContent = city;
+	myCity.appendChild(option); // Ubacili smo u select elementu option element putem JavaScript
+}
+
+let typeObject = document.querySelector('#type');
+
+for ( let objectTyp of objectType){
+	let optionType = document.createElement('option');
+	optionType.textContent = objectTyp;
+	typeObject.appendChild(optionType);
+}
+
+
+
+
+
+
 
 // City
-let searchBtn = document.querySelector("#searchBtn");
+/* let searchBtn = document.querySelector("#searchBtn");
+
 
 
 for (let cityOf of realEstatesListing) {
 	console.log(cityOf['objectType']);
-}
+} */
 
 
 // Typ
