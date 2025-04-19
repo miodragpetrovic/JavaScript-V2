@@ -78,4 +78,18 @@ const realEstatesListing = [
 
 // Search Box
 
+// City
+let searchBtn = document.querySelector("#searchBtn");
+
+searchBtn.addEventListener("click", function () {
+	let citySelect = document.querySelector("#city");
+
+	for (city of cities) {
+		console.log(cities);
+	}
+});
+// Typ
+
+// Room numbers
+
 // Real Estate Listing
