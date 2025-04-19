@@ -82,7 +82,7 @@ let myCity = document.querySelector('#city');
 for (let city of cities){
 	let option = document.createElement('option'); // Napravili smo option element
 	option.textContent = city;
-	myCity.appendChild(option); // Ubacili smo u select elementu option element putem JavaScript
+	myCity.appendChild(option); // Ubacili smo u select elementu option element putem JavaScript-a
 }
 
 let typeObject = document.querySelector('#type');
