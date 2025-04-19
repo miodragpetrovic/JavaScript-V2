@@ -93,9 +93,12 @@ for ( let objectTyp of objectType){
 	typeObject.appendChild(optionType);
 }
 
-let sizeOf = document.createElement('#sizeOf');
+let sizeOf = document.querySelector('#sizeOf');
 
-for( let rooms of roomNumber){}
+for( let rooms of roomNumber){
+	let roomOption = createElement('option');
+	
+}
 
 
 
