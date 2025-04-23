@@ -1,4 +1,25 @@
-let cities = ["Beograd", "Novi Sad", "Jagodina", "Subotica", "Paracin"];
+let cities = [
+	"Beograd",
+	"Novi Sad",
+	"Jagodina",
+	"Subotica",
+	"Paracin",
+	"Niš",
+	"Kragujevac",
+	"Zrenjanin",
+	"Pančevo",
+	"Smederevo",
+	"Čačak",
+	"Kraljevo",
+	"Užice",
+	"Valjevo",
+	"Leskovac",
+	"Vranje",
+	"Sombor",
+	"Pirot",
+	"Loznica",
+	"Kruševac",
+];
 
 let citiesSelector = document.querySelector("#citiesSelector");
 
