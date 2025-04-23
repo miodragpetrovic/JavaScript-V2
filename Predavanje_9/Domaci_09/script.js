@@ -50,6 +50,8 @@ let propertySizes = [
 	"više od 300 m²",
 ];
 
+// Cities Selector
+
 let citiesSelector = document.querySelector("#citiesSelector");
 
 for (let city of cities) {
@@ -57,3 +59,29 @@ for (let city of cities) {
 	cityOption.innerHTML = city;
 	citiesSelector.appendChild(cityOption);
 }
+
+// Typ Selector
+
+let typSelector = document.querySelector("#typSelector");
+
+for (let typ of propertyTypes) {
+	let typOption = document.createElement("option");
+	typOption.innerHTML = typ;
+	typSelector.appendChild(typOption);
+}
+
+// Property sizes Selector
+
+let sizeSelector = document.querySelector("#sizeSelector");
+
+for (let size of propertySizes) {
+	let sizeOption = document.createElement("option");
+	sizeOption.innerHTML = size;
+	sizeSelector.appendChild(sizeOption);
+}
+
+// Event Listener
+
+document.querySelector("#btnSearch").addEventListener("click", function () {
+	console.log("test");
+});
