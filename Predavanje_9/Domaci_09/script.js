@@ -83,11 +83,11 @@ for (let size of propertySizes) {
 // On change na promenu prikaze selektovan grad
 
 citiesSelector.addEventListener("change", function (e) {
-	console.log(e.currentTarget.value);
+	let selectedCity = e.currentTarget.value;
 });
 
 // Event Listener
 
-document.querySelector("#btnSearch").addEventListener("change", function () {
-	console.log("MIODRAG");
+document.querySelector("#btnSearch").addEventListener("click", function () {
+	console.log("Izabrali ste " + selectedCity);
 });
