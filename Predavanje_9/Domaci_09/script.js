@@ -80,8 +80,14 @@ for (let size of propertySizes) {
 	sizeSelector.appendChild(sizeOption);
 }
 
+// On change
+
+citiesSelector.addEventListener("change", function () {
+	console.log("promenjeno");
+});
+
 // Event Listener
 
-document.querySelector("#btnSearch").addEventListener("click", function () {
-	console.log("test");
+document.querySelector("#btnSearch").addEventListener("change", function () {
+	console.log("MIODRAG");
 });
