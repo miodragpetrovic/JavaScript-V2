@@ -1,9 +1,9 @@
 let cities = ["Beograd", "Novi Sad", "Jagodina", "Subotica", "Paracin"];
 
-let options = document.querySelector("#citiesSelector");
+let citiesSelector = document.querySelector("#citiesSelector");
 
-for (let selectOption of cities) {
-	let opt = document.createElement("option");
-	opt.innerHTML = selectOption;
-	options.appendChild(opt);
+for (let city of cities) {
+	let cityOption = document.createElement("option");
+	cityOption.innerHTML = city;
+	citiesSelector.appendChild(cityOption);
 }
