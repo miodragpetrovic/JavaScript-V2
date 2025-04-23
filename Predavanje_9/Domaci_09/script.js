@@ -80,10 +80,10 @@ for (let size of propertySizes) {
 	sizeSelector.appendChild(sizeOption);
 }
 
-// On change
+// On change na promenu prikaze selektovan grad
 
-citiesSelector.addEventListener("change", function () {
-	console.log("promenjeno");
+citiesSelector.addEventListener("change", function (e) {
+	console.log(e.currentTarget.value);
 });
 
 // Event Listener
