@@ -1,0 +1,39 @@
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+form {
+	max-width: 850px;
+	margin: auto;
+}
+
+select {
+	width: 30%;
+	padding: 10px;
+	border: 1px solid yellowgreen;
+	border-radius: 5px;
+}
+
+#btnSearch {
+	padding: 12px;
+	border-radius: 5px;
+	border: none;
+	background-color: yellowgreen;
+}
+
+#estates {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px 0px;
+}
+
+#estates div {
+	background-color: yellowgreen;
+	font-size: 15px;
+	margin: 3px;
+	padding: 5px 20px;
+	min-width: 240px;
+	border-radius: 5px;
+}
