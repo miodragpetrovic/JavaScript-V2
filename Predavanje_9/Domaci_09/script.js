@@ -131,8 +131,6 @@ for (let size of propertySizes) {
 	sizeSelector.appendChild(sizeOption);
 }
 
-// On change na promenu prikaze selektovan grad
-
 let selectedCity = null;
 let selectedTyp = null;
 let selectedSize = null;
