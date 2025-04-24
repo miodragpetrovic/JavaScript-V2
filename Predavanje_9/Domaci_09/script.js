@@ -99,6 +99,12 @@ let realEstates = [
 		price: 18000,
 		size: 400,
 	},
+	{
+		city: "Paracin",
+		option: "Lokal",
+		price: 18000,
+		size: 400,
+	},
 ];
 
 // Cities Selector
