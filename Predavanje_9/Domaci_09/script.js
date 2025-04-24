@@ -59,7 +59,7 @@ let realEstates = [
 	},
 	{
 		city: "Novi Sad",
-		option: "Kuća",
+		option: null,
 		price: 89000,
 		size: 75,
 	},
@@ -171,12 +171,12 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 	console.log(estate.price);
 } */
 
-// Ispisati sve nekretnine
+// Prikazi sve nekretnine
 
-let estates = document.querySelector("#estates");
+let estates = document.querySelector("#estates"); // Glavni DIV estates
 
 for (let estate of realEstates) {
-	console.log(estate);
+	console.log(estate); //Check
 	let div = document.createElement("div");
 
 	let pTagPrice = document.createElement("p");
@@ -186,8 +186,9 @@ for (let estate of realEstates) {
 	pTagSize.innerHTML = estate.size + " m2";
 
 	let typeAndCity = document.createElement("h1");
-	typeAndCity.innerHTML = estate.option + " - " + estate.city;
+	typeAndCity.innerHTML = estate.option + " " + estate.city;
 	if (estate.option === null) {
+		typeAndCity.innerHTML = "--" + " " + estate.city;
 	}
 
 	div.appendChild(typeAndCity);
