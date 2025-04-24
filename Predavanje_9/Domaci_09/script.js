@@ -164,3 +164,9 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 			selectedSize
 	);
 });
+
+// Ispisivanje
+
+for (estate of realEstates) {
+	console.log(estate.price);
+}
