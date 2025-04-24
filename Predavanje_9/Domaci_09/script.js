@@ -95,7 +95,7 @@ let realEstates = [
 	},
 	{
 		city: "Zrenjanin",
-		option: "Plac",
+		option: null,
 		price: 18000,
 		size: 400,
 	},
@@ -179,9 +179,19 @@ for (let estate of realEstates) {
 	console.log(estate);
 	let div = document.createElement("div");
 
+	let pTagPrice = document.createElement("p");
+	pTagPrice.innerHTML = estate.price;
+
+	let pTagSize = document.createElement("p");
+	pTagSize.innerHTML = estate.size + " m2";
+
 	let typeAndCity = document.createElement("h1");
-	typeAndCity.innerHTML = estate.option + estate.city;
+	typeAndCity.innerHTML = estate.option + " - " + estate.city;
+	if (estate.option === null) {
+	}
 
 	div.appendChild(typeAndCity);
+	div.appendChild(pTagPrice);
+	div.appendChild(pTagSize);
 	estates.appendChild(div);
 }
