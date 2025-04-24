@@ -167,6 +167,21 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 
 // Ispisivanje
 
-for (estate of realEstates) {
+/* for (estate of realEstates) {
 	console.log(estate.price);
+} */
+
+// Ispisati sve nekretnine
+
+let estates = document.querySelector("#estates");
+
+for (let estate of realEstates) {
+	console.log(estate);
+	let div = document.createElement("div");
+
+	let typeAndCity = document.createElement("h1");
+	typeAndCity.innerHTML = estate.option + estate.city;
+
+	div.appendChild(typeAndCity);
+	estates.appendChild(div);
 }
