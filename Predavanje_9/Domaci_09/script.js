@@ -169,7 +169,7 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 	console.log(estate.price);
 } */
 
-// Prikazi sve nekretnine
+// Prikazi sve nekretnine - Domaci 9
 
 let estates = document.querySelector("#estates"); // Glavni DIV estates
 
