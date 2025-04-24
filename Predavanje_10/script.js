@@ -159,14 +159,9 @@ sizeSelector.addEventListener("change", function (e) {
 // Event Listener
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
-	console.log(
-		"Izabrali ste " +
-			selectedCity +
-			" i tip " +
-			selectedTyp +
-			" i velicina " +
-			selectedSize
-	);
+	if (selectedCity !== null) {
+		console.log("test");
+	}
 });
 
 // Ispisivanje
