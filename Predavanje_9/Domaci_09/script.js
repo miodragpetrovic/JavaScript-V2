@@ -50,6 +50,57 @@ let propertySizes = [
 	"više od 300 m²",
 ];
 
+let realEstates = [
+	{
+		city: "Beograd",
+		option: "Stan",
+		price: 48200,
+		size: 25,
+	},
+	{
+		city: "Novi Sad",
+		option: "Kuća",
+		price: 89000,
+		size: 75,
+	},
+	{
+		city: "Subotica",
+		option: "Plac",
+		price: 22000,
+		size: 300,
+	},
+	{
+		city: "Jagodina",
+		option: "Stan",
+		price: 37000,
+		size: 45,
+	},
+	{
+		city: "Niš",
+		option: "Kuća",
+		price: 99000,
+		size: 120,
+	},
+	{
+		city: "Kragujevac",
+		option: "Lokal",
+		price: 61000,
+		size: 60,
+	},
+	{
+		city: "Pančevo",
+		option: "Stan",
+		price: 41000,
+		size: 32,
+	},
+	{
+		city: "Zrenjanin",
+		option: "Plac",
+		price: 18000,
+		size: 400,
+	},
+];
+
 // Cities Selector
 
 let citiesSelector = document.querySelector("#citiesSelector");
@@ -82,12 +133,34 @@ for (let size of propertySizes) {
 
 // On change na promenu prikaze selektovan grad
 
+let selectedCity = null;
+let selectedTyp = null;
+let selectedSize = null;
+
 citiesSelector.addEventListener("change", function (e) {
-	let selectedCity = e.currentTarget.value;
+	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
+	selectedCity = e.currentTarget.value;
+});
+
+typSelector.addEventListener("change", function (e) {
+	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
+	selectedTyp = e.currentTarget.value;
+});
+
+sizeSelector.addEventListener("change", function (e) {
+	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
+	selectedSize = e.currentTarget.value;
 });
 
 // Event Listener
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
-	console.log("Izabrali ste " + selectedCity);
+	console.log(
+		"Izabrali ste " +
+			selectedCity +
+			" i tip " +
+			selectedTyp +
+			" i velicina " +
+			selectedSize
+	);
 });
