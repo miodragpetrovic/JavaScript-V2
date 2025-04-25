@@ -203,3 +203,9 @@ for (let estate of realEstates) {
 	div.appendChild(pTagSize);
 	estates.appendChild(div);
 }
+
+document.querySelector("#btnSearch").addEventListener("click", function () {
+	if (selectedCity !== null) {
+		console.log(selectedCity);
+	}
+});
