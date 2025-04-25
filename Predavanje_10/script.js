@@ -156,13 +156,21 @@ sizeSelector.addEventListener("change", function (e) {
 	selectedSize = e.currentTarget.value;
 });
 
-// Event Listener
+// Event Listener pretraga
 
-document.querySelector("#btnSearch").addEventListener("click", function () {
+/* document.querySelector("#btnSearch").addEventListener("click", function () {
 	if (selectedCity !== null) {
 		console.log("test");
 	}
-});
+
+	if (selectedTyp !== null) {
+		console.log("tip");
+	}
+
+	if (selectedSize !== null) {
+		console.log("size");
+	}
+}); */
 
 // Ispisivanje
 
