@@ -144,6 +144,12 @@ let selectedSize = null;
 citiesSelector.addEventListener("change", function (e) {
 	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
 	selectedCity = e.currentTarget.value;
+
+	for (let realEstate of realEstates) {
+		if (realEstate.city === selectedCity) {
+			console.log(realEstate);
+		}
+	}
 });
 
 typSelector.addEventListener("change", function (e) {
