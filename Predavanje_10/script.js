@@ -156,6 +156,8 @@ sizeSelector.addEventListener("change", function (e) {
 	selectedSize = e.currentTarget.value;
 });
 
+// Pretraga
+
 // Prikazi sve nekretnine - Domaci 9
 
 let estates = document.querySelector("#estates"); // Glavni DIV estates
@@ -184,8 +186,8 @@ for (let estate of realEstates) {
 
 // Pretraga
 
-document.querySelector("#btnSearch").addEventListener("click", function () {
+/* document.querySelector("#btnSearch").addEventListener("click", function () {
 	if (selectedCity !== null) {
 		console.log(selectedCity);
 	}
-});
+}); */
