@@ -147,7 +147,7 @@ citiesSelector.addEventListener("change", function (e) {
 
 	for (let realEstate of realEstates) {
 		if (realEstate.city === selectedCity) {
-			console.log(realEstate);
+			console.log(realEstate.city);
 		}
 	}
 });
