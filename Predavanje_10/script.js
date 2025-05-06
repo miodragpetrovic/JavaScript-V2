@@ -141,7 +141,7 @@ let selectedCity = null;
 let selectedTyp = null;
 let selectedSize = null;
 
-citiesSelector.addEventListener("change", function (e) {
+citiesSelector.addEventListener("change", (e) => {
 	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
 	selectedCity = e.currentTarget.value;
 
@@ -169,7 +169,7 @@ sizeSelector.addEventListener("change", function (e) {
 let estates = document.querySelector("#estates"); // Glavni DIV estates
 
 for (let estate of realEstates) {
-	console.log(estate); //Check
+	/* console.log(estate); //Check */
 	let div = document.createElement("div");
 
 	let pTagPrice = document.createElement("p");
