@@ -127,7 +127,7 @@ for (let typ of propertyTypes) {
 	typSelector.appendChild(typOption);
 }
 
-// Property size Selector
+// Property sizes Selector
 
 let sizeSelector = document.querySelector("#sizeSelector");
 
@@ -141,15 +141,9 @@ let selectedCity = null;
 let selectedTyp = null;
 let selectedSize = null;
 
-citiesSelector.addEventListener("change", (e) => {
+citiesSelector.addEventListener("change", function (e) {
 	// Unutar viticastih zagrada je local scope tako da mora prvo promenljiva izvan da se deklarise
 	selectedCity = e.currentTarget.value;
-
-	for (let realEstate of realEstates) {
-		if (realEstate.city === selectedCity) {
-			console.log(realEstate.city);
-		}
-	}
 });
 
 typSelector.addEventListener("change", function (e) {
@@ -162,12 +156,31 @@ sizeSelector.addEventListener("change", function (e) {
 	selectedSize = e.currentTarget.value;
 });
 
-// Prikaz nekretnina
+// Event Listener
+
+document.querySelector("#btnSearch").addEventListener("click", function () {
+	console.log(
+		"Izabrali ste " +
+			selectedCity +
+			" i tip " +
+			selectedTyp +
+			" i velicina " +
+			selectedSize
+	);
+});
+
+// Ispisivanje
+
+/* for (estate of realEstates) {
+	console.log(estate.price);
+} */
+
+// Prikazi sve nekretnine - Domaci 9
 
 let estates = document.querySelector("#estates"); // Glavni DIV estates
 
 for (let estate of realEstates) {
-	/* console.log(estate); //Check */
+	console.log(estate); //Check
 	let div = document.createElement("div");
 
 	let pTagPrice = document.createElement("p");
@@ -187,13 +200,3 @@ for (let estate of realEstates) {
 	div.appendChild(pTagSize);
 	estates.appendChild(div);
 }
-
-// Pretraga
-
-document.querySelector("#btnSearch").addEventListener("click", function () {
-	if (selectedCity !== null) {
-		console.log(selectedCity);
-		estates.innerHTML += selectedCity;
-		
-	}
-});
