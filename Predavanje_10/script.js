@@ -158,6 +158,8 @@ sizeSelector.addEventListener("change", function (e) {
 
 // Event Listener
 
+let estates = document.querySelector("#estates"); // Glavni DIV estates
+
 document.querySelector("#btnSearch").addEventListener("click", function () {
 	console.log(
 		"Izabrali ste " +
@@ -169,15 +171,10 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 	);
 });
 
-// Ispisivanje
-
-/* for (estate of realEstates) {
-	console.log(estate.price);
-} */
 
 // Prikazi sve nekretnine - Domaci 9
 
-let estates = document.querySelector("#estates"); // Glavni DIV estates
+
 
 for (let estate of realEstates) {
 	console.log(estate); //Check
