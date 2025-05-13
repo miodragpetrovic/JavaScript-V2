@@ -40,68 +40,68 @@ let propertyTypes = [
 ];
 
 let propertySizes = [
-	"do 30 m²",
-	"31–50 m²",
-	"51–70 m²",
-	"71–100 m²",
-	"101–150 m²",
-	"151–200 m²",
-	"201–300 m²",
-	"više od 300 m²",
+	30,
+	50,
+	70,
+	100,
+	150,
+	200,
+	300,
+	400,
 ];
 
 let realEstates = [
 	{
 		city: "Beograd",
-		option: "Stan",
+		typ: "Stan",
 		price: 48200,
-		size: 25,
+		size: 50,
 	},
 	{
 		city: "Novi Sad",
-		option: null,
+		typ: null,
 		price: 89000,
-		size: 75,
+		size: 70,
 	},
 	{
 		city: "Subotica",
-		option: "Plac",
+		typ: "Plac",
 		price: 22000,
 		size: 300,
 	},
 	{
 		city: "Jagodina",
-		option: "Stan",
+		typ: "Stan",
 		price: 37000,
-		size: 45,
+		size: 100,
 	},
 	{
 		city: "Niš",
-		option: "Kuća",
+		typ: "Kuća",
 		price: 99000,
-		size: 120,
+		size: 150,
 	},
 	{
 		city: "Kragujevac",
-		option: "Lokal",
+		typ: "Lokal",
 		price: 61000,
-		size: 60,
+		size: 50,
 	},
 	{
 		city: "Pančevo",
-		option: "Stan",
+		typ: "Stan",
 		price: 41000,
-		size: 32,
+		size: 100,
 	},
 	{
 		city: "Zrenjanin",
-		option: null,
+		typ: null,
 		price: 18000,
 		size: 400,
 	},
 	{
 		city: "Paracin",
-		option: "Lokal",
+		typ: "Lokal",
 		price: 18000,
 		size: 400,
 	},
@@ -169,7 +169,7 @@ for (let estate of realEstates) {
 	let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
 	let matchSize = selectedSize === "" || estate.size === selectedSize;
 	
-	if(matchCity && matchTyp && matchSize){
+	if(matchCity){
 
 	// Prikaz izabranih nekretnina
 
@@ -182,8 +182,8 @@ for (let estate of realEstates) {
 	pTagSize.innerHTML = estate.size + " m2";
 
 	let typeAndCity = document.createElement("h1");
-	typeAndCity.innerHTML = estate.option + " " + estate.city;
-	if (estate.option === null) {
+	typeAndCity.innerHTML = estate.typ + " " + estate.city;
+	if (estate.typ === null) {
 		typeAndCity.innerHTML = "--" + " " + estate.city;
 	}
 
@@ -193,6 +193,8 @@ for (let estate of realEstates) {
 
 	estates.appendChild(div);
 
+	}else{
+		console.log("Nema rezultata")
 	}
   }
 });
