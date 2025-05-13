@@ -51,61 +51,28 @@ let propertySizes = [
 ];
 
 let realEstates = [
-	{
-		city: "Beograd",
-		typ: "Stan",
-		price: 48200,
-		size: 50,
-	},
-	{
-		city: "Novi Sad",
-		typ: null,
-		price: 89000,
-		size: 70,
-	},
-	{
-		city: "Subotica",
-		typ: "Plac",
-		price: 22000,
-		size: 300,
-	},
-	{
-		city: "Jagodina",
-		typ: "Stan",
-		price: 37000,
-		size: 100,
-	},
-	{
-		city: "Niš",
-		typ: "Kuća",
-		price: 99000,
-		size: 150,
-	},
-	{
-		city: "Kragujevac",
-		typ: "Lokal",
-		price: 61000,
-		size: 50,
-	},
-	{
-		city: "Pančevo",
-		typ: "Stan",
-		price: 41000,
-		size: 100,
-	},
-	{
-		city: "Zrenjanin",
-		typ: null,
-		price: 18000,
-		size: 400,
-	},
-	{
-		city: "Paracin",
-		typ: "Lokal",
-		price: 18000,
-		size: 400,
-	},
+  { city: "Beograd", typ: "Stan", price: 95000, size: 30 },
+  { city: "Novi Sad", typ: "Kuća", price: 120000, size: 50 },
+  { city: "Jagodina", typ: "Plac", price: 25000, size: 70 },
+  { city: "Subotica", typ: "Lokal", price: 40000, size: 100 },
+  { city: "Paracin", typ: "Magacin", price: 60000, size: 150 },
+  { city: "Niš", typ: "Stan", price: 67000, size: 200 },
+  { city: "Kragujevac", typ: "Vikendica", price: 48000, size: 300 },
+  { city: "Zrenjanin", typ: null, price: 15000, size: 400 }, // null
+  { city: "Pančevo", typ: "Garaža", price: 12000, size: 30 },
+  { city: "Smederevo", typ: "Kuća", price: 82000, size: 50 },
+  { city: "Čačak", typ: "Lokal", price: 38000, size: 70 },
+  { city: "Kraljevo", typ: "Zgrada", price: 210000, size: 100 },
+  { city: "Jagodina", typ: "Stan", price: 56000, size: 150 },
+  { city: "Valjevo", typ: "Hotel", price: 500000, size: 200 },
+  { city: "Leskovac", typ: "Soba", price: 10000, size: 300 },
+  { city: "Vranje", typ: "Plac", price: 22000, size: 400 },
+  { city: "Sombor", typ: null, price: 130000, size: 30 }, // null
+  { city: "Pirot", typ: "Apartman", price: 75000, size: 50 },
+  { city: "Loznica", typ: "Kuća", price: 70000, size: 70 },
+  { city: "Kruševac", typ: "Stan", price: 60000, size: 100 },
 ];
+
 
 // Cities Selector
 
