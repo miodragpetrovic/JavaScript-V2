@@ -156,28 +156,21 @@ sizeSelector.addEventListener("change", function (e) {
 	selectedSize = e.currentTarget.value;
 });
 
-// Event Listener
-
-let estates = document.querySelector("#estates"); // Glavni DIV estates
+// Event Listener / Prikazi sve nekretnine - Domaci 9
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
-	console.log(
-		"Izabrali ste " +
-			selectedCity +
-			" i tip " +
-			selectedTyp +
-			" i velicina " +
-			selectedSize
-	);
-});
 
 
-// Prikazi sve nekretnine - Domaci 9
 
-
+let estates = document.querySelector("#estates"); 
+estates.textContent = "";
 
 for (let estate of realEstates) {
-	console.log(estate); //Check
+	
+	if(estate.city === selectedCity || estate.type === selectedTyp){
+
+	// Prikaz izabranih nekretnina
+
 	let div = document.createElement("div");
 
 	let pTagPrice = document.createElement("p");
@@ -195,5 +188,11 @@ for (let estate of realEstates) {
 	div.appendChild(typeAndCity);
 	div.appendChild(pTagPrice);
 	div.appendChild(pTagSize);
+
 	estates.appendChild(div);
-}
+
+	}
+  }
+});
+
+
