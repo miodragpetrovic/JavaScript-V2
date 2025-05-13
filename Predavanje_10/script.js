@@ -160,15 +160,13 @@ sizeSelector.addEventListener("change", function (e) {
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
 
-
-
 let estates = document.querySelector("#estates"); 
-estates.textContent = "";
+estates.innerHTML = "";
 
 for (let estate of realEstates) {
 
 	let matchCity = selectedCity === "" || estate.city === selectedCity;
-	let matchTyp = selectedTyp === "" || estate.type === selectedTyp;
+	let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
 	let matchSize = selectedSize === "" || estate.size === selectedSize;
 	
 	if(matchCity && matchTyp && matchSize){
