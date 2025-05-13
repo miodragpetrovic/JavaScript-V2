@@ -39,16 +39,8 @@ let propertyTypes = [
 	"Industrijski objekat",
 ];
 
-let propertySizes = [
-	30,
-	50,
-	70,
-	100,
-	150,
-	200,
-	300,
-	400,
-];
+let propertySizes = 
+[ 30, 50, 70, 100, 150, 200, 300, 400, ];
 
 let realEstates = [
   { city: "Beograd", typ: "Stan", price: 95000, size: 30 },
@@ -69,7 +61,7 @@ let realEstates = [
   { city: "Vranje", typ: "Plac", price: 22000, size: 400 },
   { city: "Sombor", typ: null, price: 130000, size: 30 }, // null
   { city: "Pirot", typ: "Apartman", price: 75000, size: 50 },
-  { city: "Loznica", typ: "Kuća", price: 70000, size: 70 },
+  { city: "Čačak", typ: "Kuća", price: 70000, size: 70 },
   { city: "Kruševac", typ: "Stan", price: 60000, size: 100 },
 ];
 
