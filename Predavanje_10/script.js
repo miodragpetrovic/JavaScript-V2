@@ -168,8 +168,10 @@ estates.textContent = "";
 for (let estate of realEstates) {
 
 	let matchCity = selectedCity === "" || estate.city === selectedCity;
+	let matchTyp = selectedTyp === "" || estate.type === selectedTyp;
+	let matchSize = selectedSize === "" || estate.size === selectedSize;
 	
-	if(estate.city === selectedCity || estate.type === selectedTyp){
+	if(matchCity && matchTyp && matchSize){
 
 	// Prikaz izabranih nekretnina
 
