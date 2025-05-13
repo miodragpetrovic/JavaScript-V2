@@ -166,6 +166,8 @@ let estates = document.querySelector("#estates");
 estates.textContent = "";
 
 for (let estate of realEstates) {
+
+	let matchCity = selectedCity === "" || estate.city === selectedCity;
 	
 	if(estate.city === selectedCity || estate.type === selectedTyp){
 
