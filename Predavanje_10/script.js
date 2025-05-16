@@ -115,52 +115,39 @@ sizeSelector.addEventListener("change", function (e) {
 	selectedSize = e.currentTarget.value;
 });
 
-// Event Listener / Prikazi sve nekretnine - Domaci 9
+// Event Listener / Prikazi sve nekretnine
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
+	let estates = document.querySelector("#estates");
+	estates.innerHTML = "";
 
-let estates = document.querySelector("#estates"); 
-estates.innerHTML = "";
+	for (let estate of realEstates) {
+		// Provera svakog kriterijuma ponaosob
+		let matchCity = selectedCity === "" || estate.city === selectedCity;
+		let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
+		let matchSize = selectedSize === "" || estate.size === parseInt(selectedSize);
 
-let machCount = 0;
+		// Prikaži samo ako SVE izabrano odgovara
+		if (matchCity || matchTyp) {
+			let div = document.createElement("div");
 
-for (let estate of realEstates) {
+			let typeAndCity = document.createElement("h1");
+			typeAndCity.textContent = (estate.typ ? estate.typ : "--") + " " + estate.city;
 
-	let matchCity = !selectedCity === "" || estate.city === selectedCity;
-	let matchTyp = !selectedTyp === "" || estate.typ === selectedTyp;
-	let matchSize = !selectedSize === "" || estate.size === parseInt(selectedSize);
-	
-	if(matchCity && matchTyp && matchSize){
-		machCount++;
-	// Prikaz izabranih nekretnina
+			let pTagPrice = document.createElement("p");
+			pTagPrice.innerHTML = estate.price;
 
-	let div = document.createElement("div");
+			let pTagSize = document.createElement("p");
+			pTagSize.innerHTML = estate.size + " m2";
 
-	let pTagPrice = document.createElement("p");
-	pTagPrice.innerHTML = estate.price;
+			div.appendChild(typeAndCity);
+			div.appendChild(pTagPrice);
+			div.appendChild(pTagSize);
 
-	let pTagSize = document.createElement("p");
-	pTagSize.innerHTML = estate.size + " m2";
-
-	let typeAndCity = document.createElement("h1");
-	typeAndCity.innerHTML = estate.typ + " " + estate.city;
-	if (estate.typ === null) {
-		typeAndCity.innerHTML = "--" + " " + estate.city;
-	}
-
-	div.appendChild(typeAndCity);
-	div.appendChild(pTagPrice);
-	div.appendChild(pTagSize);
-
-	estates.appendChild(div);
-
-	}
-  }
-  if (matchCount === 0) {
-		let noResults = document.createElement("p");
-		noResults.innerHTML = "Nema rezultata za izabrane filtere.";
-		estates.appendChild(noResults);
+			estates.appendChild(div);
+		}
 	}
 });
+
 
 
