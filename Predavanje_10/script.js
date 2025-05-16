@@ -118,36 +118,43 @@ sizeSelector.addEventListener("change", function (e) {
 // Event Listener / Prikazi sve nekretnine
 
 document.querySelector("#btnSearch").addEventListener("click", function () {
-	let estates = document.querySelector("#estates");
-	estates.innerHTML = "";
 
-	for (let estate of realEstates) {
-		// Provera svakog kriterijuma ponaosob
-		let matchCity = selectedCity === "" || estate.city === selectedCity;
-		let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
-		let matchSize = selectedSize === "" || estate.size === parseInt(selectedSize);
+let estates = document.querySelector("#estates"); 
+estates.innerHTML = "";
 
-		// Prikaži samo ako SVE izabrano odgovara
-		if (matchCity || matchTyp) {
-			let div = document.createElement("div");
 
-			let typeAndCity = document.createElement("h1");
-			typeAndCity.textContent = (estate.typ ? estate.typ : "--") + " " + estate.city;
+for (let estate of realEstates) {
 
-			let pTagPrice = document.createElement("p");
-			pTagPrice.innerHTML = estate.price;
+	let matchCity = selectedCity === "" || estate.city === selectedCity;
+	let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
+	let matchSize = selectedSize === "" || estate.size === parseInt(selectedSize);
 
-			let pTagSize = document.createElement("p");
-			pTagSize.innerHTML = estate.size + " m2";
 
-			div.appendChild(typeAndCity);
-			div.appendChild(pTagPrice);
-			div.appendChild(pTagSize);
+	if(matchCity || matchTyp){
 
-			estates.appendChild(div);
-		}
+	let div = document.createElement("div");
+
+	let typeAndCity = document.createElement("h1");
+	typeAndCity.textContent = estate.typ + " " + estate.city;
+	if (estate.typ === null) {
+		typeAndCity.innerHTML = "--" + " " + estate.city;
 	}
-});
 
+	let pTagPrice = document.createElement("p");
+	pTagPrice.innerHTML = estate.price;
+
+	let pTagSize = document.createElement("p");
+	pTagSize.innerHTML = estate.size + " m2";
+
+
+	div.appendChild(typeAndCity);
+	div.appendChild(pTagPrice);
+	div.appendChild(pTagSize);
+
+	estates.appendChild(div);
+
+	}
+  }
+});
 
 
