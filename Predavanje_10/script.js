@@ -122,14 +122,16 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
 let estates = document.querySelector("#estates"); 
 estates.innerHTML = "";
 
+let machCount = 0;
+
 for (let estate of realEstates) {
 
-	let matchCity = selectedCity === "" || estate.city === selectedCity;
-	let matchTyp = selectedTyp === "" || estate.typ === selectedTyp;
-	let matchSize = selectedSize === "" || estate.size === selectedSize;
+	let matchCity = !selectedCity === "" || estate.city === selectedCity;
+	let matchTyp = !selectedTyp === "" || estate.typ === selectedTyp;
+	let matchSize = !selectedSize === "" || estate.size === parseInt(selectedSize);
 	
-	if(matchCity){
-
+	if(matchCity && matchTyp && matchSize){
+		machCount++;
 	// Prikaz izabranih nekretnina
 
 	let div = document.createElement("div");
@@ -152,10 +154,13 @@ for (let estate of realEstates) {
 
 	estates.appendChild(div);
 
-	}else{
-		console.log("Nema rezultata")
 	}
   }
+  if (matchCount === 0) {
+		let noResults = document.createElement("p");
+		noResults.innerHTML = "Nema rezultata za izabrane filtere.";
+		estates.appendChild(noResults);
+	}
 });
 
 
