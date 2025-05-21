@@ -74,6 +74,7 @@ for (let city of cities) {
 	let cityOption = document.createElement("option");
 	cityOption.innerHTML = city;
 	citiesSelector.appendChild(cityOption);
+	
 }
 
 // Typ Selector
@@ -130,15 +131,13 @@ for (let estate of realEstates) {
 	let matchSize = selectedSize === "" || estate.size === parseInt(selectedSize);
 
 
-	if(matchCity || matchTyp){
+	if(matchCity || matchTyp || matchSize){
 
 	let div = document.createElement("div");
 
 	let typeAndCity = document.createElement("h1");
-	typeAndCity.textContent = estate.typ + " " + estate.city;
-	if (estate.typ === null) {
-		typeAndCity.innerHTML = "--" + " " + estate.city;
-	}
+	typeAndCity.textContent = (estate.typ ? estate.typ : "--") + " " + estate.city;
+
 
 	let pTagPrice = document.createElement("p");
 	pTagPrice.innerHTML = estate.price;
