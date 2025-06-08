@@ -87,7 +87,7 @@ for (let typ of propertyTypes) {
 	typSelector.appendChild(typOption);
 }
 
-// Property sizes Selector
+// Size Selector
 
 let sizeSelector = document.querySelector("#sizeSelector");
 
@@ -96,6 +96,7 @@ for (let size of propertySizes) {
 	sizeOption.innerHTML = size;
 	sizeSelector.appendChild(sizeOption);
 }
+
 
 let selectedCity = null;
 let selectedTyp = null;
