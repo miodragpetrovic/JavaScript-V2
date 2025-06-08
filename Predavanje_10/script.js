@@ -63,7 +63,7 @@ let realEstates = [
   { city: "Pirot", typ: "Apartman", price: 75000, size: 50 },
   { city: "Čačak", typ: "Kuća", price: 70000, size: 70 },
   { city: "Kruševac", typ: "Stan", price: 60000, size: 100 },
-	{ city: "Trstenik", typ: "Kuca", price: 7, size: 100 },
+	{ city: "Trstenik", typ: "Kuca", price: 75, size: 100 },
 ];
 
 
