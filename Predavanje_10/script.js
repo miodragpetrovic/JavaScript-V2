@@ -70,7 +70,7 @@ let realEstates = [
 	{ city: "Užice", type: "Penthaus", price: 90000, size: 120 },
 	{ city: "Šabac", type: "Soba", price: 300, size: 50 },
 	{ city: "Senta", type: "Industrijski objekat", price: 140000, size: 320 },
-	{ city: "Vrbas"}
+	{ city: "Vrbas", type: "Kuca", price: 95000, }
 ];
 
 
