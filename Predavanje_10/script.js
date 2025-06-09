@@ -69,7 +69,7 @@ let realEstates = [
 	{ city: "Požarevac", type: "Zgrada", price: 120000, size: 280 },
 	{ city: "Užice", type: "Penthaus", price: 90000, size: 120 },
 	{ city: "Šabac", type: "Soba", price: 300, size: 50 },
-	{ city: "Senta", type: "Industrijski objekat"}
+	{ city: "Senta", type: "Industrijski objekat", price: 140000}
 ];
 
 
