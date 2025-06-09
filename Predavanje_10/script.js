@@ -67,7 +67,8 @@ let realEstates = [
 	{ city: "Zajecar", typ: null, price: 10000, size: 30 }, // null
 	{ city: "Novi Pazar", type: "Hotel", price: 300000, size: 500 },
 	{ city: "Požarevac", type: "Zgrada", price: 120000, size: 280 },
-	{ city: "Užice", type: "Penthaus", price: 90000, }
+	{ city: "Užice", type: "Penthaus", price: 90000, size: 120 },
+	{ city: "Šabac"}
 ];
 
 
