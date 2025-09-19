@@ -12,6 +12,7 @@
         <input type="text" id="username" placeholder="Korisnicko ime">
         <input type="text" id="password" placeholder="Password">
         <button type="submit" id="btn">login</button>
+        <div id="usernameMessage"></div>
     </form>
 
     <script defer>
@@ -43,9 +44,15 @@
             let username = document.getElementById('username').value;
             let password = document.getElementById('password').value;
 
+            let usernameMessage = document.getElementById('usernameMessage');
+
             if (username === "admin" && password === "admin123"){
                 console.log(username);
                 window.location.href = "index.html"; // Redirekcija na pocetnu stranicu
+            } else if (username === "" && password === "") {
+                usernameMessage.textContent = "Sva polja moraju biti popunjena";
+            } else if (username !== "admin" && password !== "admin123") {
+                usernameMessage.textContent = "Niste uneli validno korisnicko ime ili lozinku";
             }
         });
 
