@@ -7,8 +7,14 @@
 </head>
 <body>
     
+    <!-- Jednostavan login sistem -->
+    <form action="">
+        <input type="text" id="username" placeholder="Korisnicko ime">
+        <input type="text" id="password" placeholder="Password">
+        <button type="submit" id="btn">login</button>
+    </form>
 
-    <script>
+    <script defer>
         // Standard if...else statement
         let firstName = "Miodrag";
 
@@ -23,13 +29,25 @@
         let lastName = "Jovanovic";
         let message = (lastName === "Jovanovic" && firstName === "Miodrag") ? "Prezime i ime je tacno" : "Prezime i ime je netacno";
         console.log(message);
-        
+
 
         // Napravi jednostavan login sistem koristeci if...else if...else kada se uloguje redirektuj na pocetnu stranicu
         // ako je pogresno korisnicko ime ispisi "Pogresno korisnicko ime"
         // ako je pogresna lozinka ispisi "Pogresna loz
         let username = "admin";
         let password = "admin123";
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent form submission
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if (username === "admin" && password === "admin123"){
+                console.log(username);
+                window.location.href = "index.html"; // Redirekcija na pocetnu stranicu
+            }
+        });
 
 
     </script>
