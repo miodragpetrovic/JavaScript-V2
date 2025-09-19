@@ -9,6 +9,7 @@
     
 
     <script>
+        // Standard if...else statement
         let firstName = "Miodrag";
 
         if (firstName === "Miodrag") {
@@ -16,6 +17,14 @@
         } else {
             console.log("Ime je netacno");
         }
+
+        // Ternary operator example for concise conditional assignment 
+        /// Mora da se koristi u promenljivoj pa da se izpise if nemoze
+        let lastName = "Jovanovic";
+        let message = (lastName === "Jovanovic" && firstName === "Miodrag") ? "Prezime i ime je tacno" : "Prezime i ime je netacno";
+        console.log(message);
+
+
     </script>
 </body>
 </html>
