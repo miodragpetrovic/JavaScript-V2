@@ -15,6 +15,14 @@
         <div id="usernameMessage"></div>
     </form>
 
+    <hr>
+    <!-- Pravimo input kada upisemo ime prikazuje ispod inputa u h1 tagu kao title -->
+    <form action="">
+        <input type="text" id="nameInput" placeholder ="Unesite ime">
+        <button type="submit" id="showNameBtn">Prikazi</button>
+    </form>
+    <div id="displayName"></div>
+
     <script defer>
         // Standard if...else statement
         let firstName = "Miodrag";
@@ -53,6 +61,23 @@
                 usernameMessage.textContent = "Sva polja moraju biti popunjena";
             } else if (username !== "admin" && password !== "admin123") {
                 usernameMessage.textContent = "Niste uneli validno korisnicko ime ili lozinku";
+            }
+        });
+
+
+
+
+        let showNameBtn = document.getElementById('showNameBtn');
+        let displayName = document.getElementById('displayName');
+
+        showNameBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+           
+            let nameInput = document.getElementById('nameInput').value;
+            displayName.innerHTML = `<h1>${nameInput}</h1>`;
+
+            if (nameInput === "") {
+                displayName.innerHTML = "<p>Molimo unesite ime</p>";
             }
         });
 
