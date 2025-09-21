@@ -9,11 +9,11 @@ fullName.innerHTML = "My full name is " + localStorage.getItem('name') + " and I
 
 
 // Ubaci preko forme ime u localStorage
-let firstName = document.getElementById('firstName');
-let btn  = document.querySelector('btn');
+let btn  = document.getElementById('btn');
 
 btn.addEventListener('click', function(e) {
     e.preventDefault();
+    let firstName = document.getElementById('firstName');
     localStorage.setItem('name', firstName.value);
     fullName.innerHTML = "My full name is " + localStorage.getItem('name') + " and I'm " + localStorage.getItem('age') + " years old.";
-})
+});
