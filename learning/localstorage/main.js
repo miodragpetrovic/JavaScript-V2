@@ -16,4 +16,7 @@ btn.addEventListener('click', function(e) {
     let firstName = document.getElementById('firstName');
     localStorage.setItem('name', firstName.value);
     fullName.innerHTML = "My full name is " + localStorage.getItem('name') + " and I'm " + localStorage.getItem('age') + " years old.";
+
+    let displayFullName = document.getElementById('fullName');
+    displayFullName.innerHTML = localStorage.getItem('name');
 });
